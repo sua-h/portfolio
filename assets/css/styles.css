@@ -367,6 +367,7 @@ img {
     color: #FFF;
     padding: 1rem;
     border-radius: .5rem;
+    border: 0rem;
     font-weight: var(--font-medium);
 }
 
@@ -762,7 +763,7 @@ img {
 
 .services__modal-service {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 .services__modal-service p {
