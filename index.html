@@ -681,6 +681,7 @@
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Most recent work</span>
 
+
         <div class="portfolio__container container swiper-container">
             <div class="swiper-wrapper">
                 <!--==================== PORTFOLIO 1 ====================-->
@@ -690,10 +691,10 @@
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">Online Shopping Mall</h3>
                         <p class="portfolio__description">USER 기능과 CRUD 게시판 기능에 초점을 맞추어 작업하였습니다. 웹 디자인 실무 경험을 살려 홈페이지 디자인까지 작업해 보았습니다.</p>
-                        <a href="https://github.com/sua-h/shopping-mall" class="button button--flex button--small portfolio__button" target="_blank">
-                            Demo
+                        <span class="button button--flex button--small portfolio__button">
+                            More
                             <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
 
@@ -704,10 +705,10 @@
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">Auction Website (Team Project)</h3>
                         <p class="portfolio__description">최근 리셀로 많이 이용되는 경매 사이트를 작업했습니다. 사용자 경험에 맞추어 유저 인터페이스와 관련된 영역을 작업했습니다.</p>
-                        <a href="https://github.com/kimminhongseo/lagarto_kmhs" class="button button--flex button--small portfolio__button" target="_blank">
-                            Demo
+                        <span class="button button--flex button--small portfolio__button">
+                            More
                             <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
 
@@ -718,10 +719,10 @@
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">Cyworld Project (Team Project)</h3>
                         <p class="portfolio__description">Spring Boot JPA을 사용해 과거의 싸이월드를 재구현해 보았습니다. 미니홈피와 관련된 기능을 맡아 작업했습니다.</p>
-                        <a href="https://github.com/CykoProject/CyProject" class="button button--flex button--small portfolio__button" target="_blank">
-                            Demo
+                        <span class="button button--flex button--small portfolio__button">
+                            More
                             <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -737,6 +738,235 @@
             <!-- Add pagination -->
             <div class="swiper-pagination"></div>
         </div>
+
+
+        <!--==================== PORTFOLIO MODAL ====================-->
+        <div>
+            <!--==================== PORTFOLIO MODAL 1 ====================-->
+            <div class="portfolio__modal">
+                <div class="portfolio__modal-content">
+                    <h4 class="portfolio__modal-title">Online Shopping Mall</h4>
+                    <i class="uil uil-times portfolio__modal-close"></i>
+                    <span class="portfolio__modal-subtitle">가방 쇼핑몰 기획 및 개발</span>                                    
+                    
+                    <div class="portfolio__modal-calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2021<br>
+                        <i class="uil uil-user"></i>
+                        1명 (개인 프로젝트)
+                    </div>
+
+                    <div class="portfolio__modal-services grid">
+                        <div class="portfolio__modal-service">                                    
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                프로젝트 요약
+                            </h5>
+                            <span>웹 개발 수업을 마무리하고 짧게나마 배웠던 지식들을 가지고 웹 페이지를 구현해 보고 싶었습니다. 배운 내용에 충실하게 USER 기능과 CRUD 게시판에 초점을 맞추어 작업하였습니다. 그리고 웹 디자인 실무 경험을 살려 홈페이지 디자인까지 전부 작업한 결과물을 만들고자 했습니다. 트렌드를 분석해서 웹 사이트 디자인을 기획하고, 상품들이 돋보일 수 있게 심플한 디자인으로 구상했습니다. 또한 고객 니즈에 맞도록 사용자 중심의 설계를 고민하여 기획하고 개발을 진행했습니다.</span>
+                        </div>
+                        
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                사용 언어 및 프레임워크
+                            </h5>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>Mybatis</li>
+                                <li>MariaDB</li>
+                                <li>JSP</li>
+                                <li>Javascript</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                작업 내용
+                            </h5>
+                            <span>USER와 관련된 기능들을 작업했습니다. 회원가입, 쿠키를 이용한 자동 로그인, 아이디 / 비밀번호 찾기 등의 기능과 spring MVC 프레임워크를 이용한 게시판 CRUD 기능을 작업했습니다.</span>
+                        </div>
+
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                프로젝트 후기
+                            </h5>
+                            <span>처음으로 혼자 디자인과 개발을 모두 기획하다 보니 생각보다 작업량이 많았습니다. 프로젝트 파트 별로 분배와 시간 관리가 부족했다고 느꼈습니다. 특히 처음 사용해 보는 정규식 작업에서 많은 시간을 할애했던 것 같아 아쉽습니다. 시간 분배를 더 디테일하게 계획해 문제를 해결해 나가도록 할 생각입니다.</span>
+                        </div>
+
+                        <div class="portfolio__modal-footer">
+                            <span>프로젝트의 더 자세한 내용은 깃허브 리드미에서 확인할 수 있습니다.</span>
+                            <div class="portfolio__modal-git">
+                                <a href="https://github.com/sua-h/shopping-mall" target="_blank">
+                                    Github
+                                </a>
+                                <i class="uil uil-arrow-right modal-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO MODAL 2 ====================-->
+            <div class="portfolio__modal">
+                <div class="portfolio__modal-content">
+                    <h4 class="portfolio__modal-title">Auction Website</h4>
+                    <i class="uil uil-times portfolio__modal-close"></i>
+                    <span class="portfolio__modal-subtitle">경매를 이용한 쇼핑몰 기획 및 개발</span>                                    
+                    
+                    <div class="portfolio__modal-calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2022.01 - 2022.03 <br>
+                        <i class="uil uil-users-alt"></i>
+                        4명
+                    </div>
+
+                    <div class="portfolio__modal-services grid">
+                        <div class="portfolio__modal-service">                                    
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                프로젝트 요약
+                            </h5>
+                            <span>새로운 소비문화의 형성으로 앱과 웹을 이용한 거래 시스템이 활성화되고 있습니다. 저희는 경매 물품과 일반 물품을 분류하여 판매할 수 있도록 기획했고 일반 물품은 자체적으로 샵에서만 판매할 수 있도록 작업했습니다. 또한 같은 취미를 공유하는 유저들을 위해 정보 교환이 가능한 커뮤니티 게시판을 구성하여 작업했습니다. 회원의 활동 내용으로 회원 포인트를 적립하고 신뢰도를 가질 수 있는 우수 회원과 불량 회원의 레벨을 나누어 관리할 수 있도록 했습니다.</span>
+                        </div>
+                        
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                사용 언어 및 프레임워크
+                            </h5>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>Mybatis</li>
+                                <li>MariaDB</li>
+                                <li>Thymeleaf</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                협업 환경
+                            </h5>
+                            <span>word를 이용한 기획 단계 문서화<br>Github를 이용한 소스 및 이력 관리<br>주 1-2회 회의 및 단체 메신저를 이용한 소통</span>
+                        </div>
+
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                맡은 역할
+                            </h5>
+                            <span>사용자 경험에 맞추어 유저 인터페이스와 관련된 영역을 작업했습니다. 회원가입, 쿠키를 이용한 아이디 저장, 아이디/비밀번호 찾기, API를 이용한 SNS 로그인, 회원 포인트 적립 및 레벨 기능, 메인 페이지 등을 구현했습니다.</span>
+                        </div>
+
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                프로젝트 후기
+                            </h5>
+                            <span>이번 프로젝트를 통해 많은 사람을 만나고 개발을 할 수 있어 즐거웠습니다. 기억에 남았던 작업은 SNS API를 이용한 회원 가입에서 중간 단계를 추가해 중복 가입을 막을 수 있게 한 부분입니다. 디테일한 기능 구현을 위해 많은 생각과 고민을 담아 작업했던 시간이 좋은 성장 경험으로 남게 된 것 같습니다. Github를 이용해 팀 프로젝트 소스 관리를 해 보면서 pull request 과정에서 오류를 자주 마주하게 되었습니다. 충돌 부분을 직접 해결하거나 터미널 명령어를 이용하여 문제를 해결할 수 있었습니다. 이번 프로젝트를 통해 Feature Branch Workflow 방식을 이해하고 배우는 과정이 되었습니다.</span>
+                        </div>
+
+                        <div class="portfolio__modal-footer">
+                            <span>프로젝트의 더 자세한 내용은 깃허브 리드미에서 확인할 수 있습니다.</span>
+                            <div class="portfolio__modal-git">
+                                <a href="https://github.com/kimminhongseo/lagarto_kmhs" target="_blank">
+                                    Github
+                                </a>
+                                <i class="uil uil-arrow-right modal-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO MODAL 3 ====================-->  
+            <div class="portfolio__modal">
+                <div class="portfolio__modal-content">
+                    <h4 class="portfolio__modal-title">Cyworld Project</h4>
+                    <i class="uil uil-times portfolio__modal-close"></i>
+                    <span class="portfolio__modal-subtitle">싸이월드 재구현 프로젝트</span>                                    
+                    
+                    <div class="portfolio__modal-calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2022.03 - 2022.06 <br>
+                        <i class="uil uil-users-alt"></i>
+                        5명
+                    </div>
+
+                    <div class="portfolio__modal-services grid">
+                        <div class="portfolio__modal-service">                                    
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                프로젝트 요약
+                            </h5>
+                            <span>과거의 주제로 이야기를 하다 보면 싸이월드 이야기가 빠지지 않고 나옵니다. 다양한 나이대의 사람들과 모여 이야기를 하다 보면 싸이월드를 이용해 보지 못한 사람도 있었습니다. 그 과거의 분위기와 추억을 설명해 주고 싶었지만 한계가 있어 직접 보여주고 싶었습니다. 그런 생각을 하던 중, 중단되었던 싸이월드 서비스를 재개한다는 소식을 들었습니다. 하지만 웹이 아닌 모바일 버전으로만 제공한다는 이야기를 듣고, 저희들의 '그 시절 싸이월드 감성'을 잃게 되는 것이 아쉬웠습니다. 그래서 아쉬운 마음과 직접 보여주고 싶은 마음을 안고 이 프로젝트를 기획하게 되었습니다. 이번 프로젝트는 JPA 오픈 소스인 Hibernate를 사용하여 작업했습니다.</span>
+                        </div>
+                        
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                사용 언어 및 프레임워크
+                            </h5>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>Spring Security</li>
+                                <li>Spring Boot JPA</li>
+                                <li>MariaDB</li>
+                                <li>Thymeleaf</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                협업 환경
+                            </h5>
+                            <span>word를 이용한 기획 단계 문서화<br>Github를 이용한 소스 및 이력 관리<br>주 1회 회의 및 단체 메신저를 이용한 소통</span>
+                        </div>
+
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                맡은 역할
+                            </h5>
+                            <span>미니홈피 기능을 맡아 작업했습니다. AJAX를 이용한 미니홈피 수정 및 일촌평 기능, 사진첩 게시판의 파일 업로드 기능, 스크랩 기능 등을 구현했습니다. 한 사용자가 여러 게시글을 스크랩하고, 한 게시글이 여러 사용자로부터 스크랩되는 로직을 구현하기 위해 사용자와 게시글 간의 M:N 관계를 이용해 작업했습니다.</span>
+                        </div>
+
+                        <div class="portfolio__modal-service">
+                            <h5>
+                                <i class="portfolio__modal-icon uil uil-asterisk"></i>
+                                프로젝트 후기
+                            </h5>
+                            <span>이번 프로젝트를 진행하면서 팀원 모두 JPA를 처음 사용해봤습니다. 스스로 배우면서 프로젝트를 진행해야 했기에 막히는 부분도 많았고 속도도 더뎠습니다. 하지만 직접 모르는 부분을 찾으면서 문제를 해결했을 때 실력이 가장 성장한 것 같습니다. 팀원들에게 도움을 요청하기도 하고 팀원들이 헤매는 부분을 알려주기도 하면서 좋은 피드백이 되었고, 커뮤니케이션의 중요성을 느낄 수 있었습니다.</span>
+                        </div>
+
+                        <div class="portfolio__modal-footer">
+                            <span>프로젝트의 더 자세한 내용은 깃허브 리드미에서 확인할 수 있습니다.</span>
+                            <div class="portfolio__modal-git">
+                                <a href="https://github.com/CykoProject/CyProject" target="_blank" class="">
+                                    Github
+                                </a>
+                                <i class="uil uil-arrow-right modal-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
     </section>
 
     <!--==================== PROJECT IN MIND ====================-->
