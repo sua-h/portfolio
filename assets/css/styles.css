@@ -824,6 +824,10 @@ img {
     margin-bottom: var(--mb-1-5);
 }
 
+.portfolio__button {
+    cursor: pointer;
+}
+
 .portfolio__button:hover .button__icon {
     transform: translateX(.25rem);
 }
@@ -858,6 +862,139 @@ img {
 .swiper-button-next,
 .swiper-pagination-bullet {
     outline: none;
+}
+
+
+.portfolio__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.portfolio__modal-content {
+    width: 40%;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.portfolio__modal-services {
+    row-gap: 1rem;
+}
+
+.portfolio__modal-service {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+
+.portfolio__modal-service h5 {
+    color: var(--title-color);
+    font-size: 1rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.portfolio__modal-service h5 i {
+    margin: 0;
+}
+
+.portfolio__modal-service span {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.portfolio__modal-service ul {
+    margin-bottom: var(--mb-1);
+}
+
+.portfolio__modal-service ul li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #666;
+    padding: 2px 7px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    margin: 3px 2px 2px;
+}
+
+.portfolio__modal-title {
+    
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.portfolio__modal-subtitle {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__modal-calendar {
+    font-size: var(--small-font-size);
+    column-gap: var(--text-color-light);
+    margin-bottom: var(--mb-2);
+}
+
+.portfolio__modal-footer span {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.portfolio__modal-icon {
+    color: var(--first-color);
+    margin-right: var(--mb-0-25);
+}
+
+.modal-icon {
+    margin-left: 0.25rem;
+    transition: .3s;
+}
+
+.portfolio__modal-git {
+    display: flex;
+    padding: 0.5rem 0;
+}
+
+.portfolio__modal-git a, .portfolio__modal-git .modal-icon {
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+}
+
+.portfolio__modal-git:hover .modal-icon {
+    transform: translateX(.25rem);
+}
+
+/* Active Modal */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+    overflow: scroll;
 }
 
 /*==================== PROJECT IN MIND ====================*/
@@ -1380,4 +1517,3 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
