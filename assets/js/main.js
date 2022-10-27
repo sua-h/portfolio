@@ -106,6 +106,29 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     },
 });
 
+/*==================== PORTFOLIO MODAL ====================*/
+const portfolioModalViews = document.querySelectorAll('.portfolio__modal'),
+    portfolioModalBtns = document.querySelectorAll('.portfolio__button'),
+    portfolioModalCloses = document.querySelectorAll('.portfolio__modal-close')
+
+let portfolioModal = function(modalClick) {
+    portfolioModalViews[modalClick].classList.add('active-modal');
+}
+
+portfolioModalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () => {
+        portfolioModal(i - 1)
+    })
+})
+
+portfolioModalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        portfolioModalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
+
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true,
