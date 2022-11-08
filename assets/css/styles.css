@@ -884,7 +884,7 @@ img {
 
 .portfolio__modal-content {
     width: 40%;
-    height: 90%;
+    max-height: 90%;
     background-color: var(--container-color);
     border-radius: .5rem;
     padding: 1.5rem;
