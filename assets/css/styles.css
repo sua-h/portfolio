@@ -884,10 +884,12 @@ img {
 
 .portfolio__modal-content {
     width: 40%;
-    position: relative;
+    height: 90%;
     background-color: var(--container-color);
-    padding: 1.5rem;
     border-radius: .5rem;
+    padding: 1.5rem;
+    position: relative;
+    overflow: auto;
 }
 
 .portfolio__modal-services {
